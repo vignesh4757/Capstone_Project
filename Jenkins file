@@ -1,0 +1,35 @@
+pipeline {
+  agent any
+
+  stages {
+    stage('Checkout') {
+      steps {
+        checkout scm
+      }
+    }
+
+    stage('Build') {
+      steps {
+        echo 'pip install -r requirements.txt'
+      }
+    }
+
+    stage('Train') {
+      steps {
+        echo 'python train.py'
+      }
+    }
+
+    stage('Evaluate') {
+      steps {
+        echo 'python evaluate.py'
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+        echo 'python deploy.py'
+      }
+    }
+  }
+}
