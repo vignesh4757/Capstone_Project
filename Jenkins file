@@ -20,12 +20,6 @@ pipeline {
       }
     }
 
-    stage('Evaluate') {
-      steps {
-        echo 'python evaluate.py'
-      }
-    }
-
     stage('Deploy') {
       steps {
         echo 'python deploy.py'
