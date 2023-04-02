@@ -22,7 +22,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        echo 'python deploy.py'
+        echo 'final stst.py'
       }
     }
   }
