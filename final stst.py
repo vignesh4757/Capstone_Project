@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 # Load the trained model from a pickle file
-with open('/Users/vignesh/Desktop/Final Hackathon/decision_tree_model (2).pkl', 'rb') as f:
+with open('/Users/vignesh/Desktop/Final Hackathon/decision_tree_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 model_columns = ['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService',
