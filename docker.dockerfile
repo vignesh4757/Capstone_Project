@@ -5,4 +5,4 @@ WORKDIR /usr/app/
 RUN pip install -r requirements.txt
 
 
-CMD ["streamlit", "run", "/Users/vignesh/Desktop/Final Hackathon/final stst.py/final stst.py"]
+CMD ["streamlit", "run", "final stst.py/final stst.py"]
